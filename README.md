@@ -1,1 +1,0 @@
-https://github.com/roman-mirzoian/rsschool-cv/cv
