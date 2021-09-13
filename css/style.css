@@ -1,4 +1,8 @@
-.header-part {
+.main-info {
+  min-height: 400px!important;
+}
+
+.photo-part {
   height: 400px;
 }
 
@@ -9,7 +13,7 @@
   border-radius: 100px 15px 100px 15px;
 }
 
-.card {
+.basic-card {
   min-height: 350px;
 }
 
@@ -34,6 +38,25 @@
   color: #ffffff;
 }
 
+@media (max-width: 500px) {
+  .section-name {
+    font-size: 10px;
+  }
+}
+
+.skills-list,
 .languages-list {
   font-size: 1.5rem;
+}
+
+.self-presentation {
+  height: max-content;
+}
+
+.video {
+  margin: 0 auto;
+}
+
+.page-footer {
+  color: #000000;
 }
