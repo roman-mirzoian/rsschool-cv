@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Roman Mirzoian CV</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/rainbow.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/languages/javascript.min.js"></script>
+  <script>hljs.highlightAll();</script>
 </head>
 <body>
   <header>
@@ -30,11 +34,11 @@
   </header>
 
   <main class="row">
-    <section class="experience col s5 offset-s1">
+    <section class="experience col s12 m5 offset-m1">
       <div class="card hoverable horizontal">
-        <div class="blue-grey darken-4 section-name-container">
-          <div class="section-name">
-            <h5 class="white-text">EXPERIENCE</h5>
+        <div class="section-name-container">
+          <div class="section-name-wrapper">
+            <p class="section-name">EXPERIENCE</p>
           </div>
         </div>
         <div class="card-stacked">
@@ -58,11 +62,11 @@
       </div>
     </section>
 
-    <section class="education col s5">
+    <section class="education col s12 m5">
       <div class="card hoverable horizontal">
-        <div class="blue-grey darken-4 section-name-container">
-          <div class="section-name">
-            <h5 class="white-text">EDUCATION</h5>
+        <div class="section-name-container">
+          <div class="section-name-wrapper">
+            <p class="section-name">EDUCATION</p>
           </div>
         </div>
         <div class="card-stacked">
@@ -82,16 +86,16 @@
       </div>
     </section>
 
-    <section class="skills col s5 offset-s1">
+    <section class="skills col s12 m5 offset-m1">
       <div class="card hoverable horizontal">
-        <div class="blue-grey darken-4 section-name-container">
-          <div class="section-name">
-            <h5 class="white-text">SKILLS</h5>
+        <div class="section-name-container">
+          <div class="section-name-wrapper">
+            <p class="section-name">SKILLS</p>
           </div>
         </div>
         <div class="card-stacked">
           <div class="card-content valign-wrapper">
-            <ul class="push">
+            <ul class="">
               <li>HTML;</li>
               <li>CSS (SASS/SCSS, Bootstrap);</li>
               <li>JavaScript (es6+, OOP);</li>
@@ -105,11 +109,11 @@
       </div>
     </section>
 
-    <section class="languages col s5">
+    <section class="languages col s12 m5">
       <div class="card hoverable horizontal">
-        <div class="blue-grey darken-4 section-name-container">
-          <div class="section-name">
-            <h5 class="white-text">LANGUAGES</h5>
+        <div class="section-name-container">
+          <div class="section-name-wrapper">
+            <p class="section-name">LANGUAGES</p>
           </div>
         </div>
         <div class="card-stacked">
@@ -124,11 +128,11 @@
       </div>
     </section>
 
-    <section class="code-example col s10 offset-s1">
+    <section class="portfolio col s10 offset-s1">
       <div class="card hoverable horizontal">
-        <div class="blue-grey darken-4 section-name-container">
-          <div class="section-name">
-            <h5 class="white-text">CODE-EXAMPLE</h5>
+        <div class="section-name-container">
+          <div class="section-name-wrapper">
+            <p class="section-name">PORTFOLIO</p>
           </div>
         </div>
 
@@ -140,6 +144,49 @@
       </div>
     </section>
 
+    <section class="code-example col s10 offset-s1 hide-on-small-only">
+      <div class="card hoverable horizontal">
+        <div class="section-name-container">
+          <div class="section-name-wrapper">
+            <p class="section-name">CODE-EXAMPLE</p>
+          </div>
+        </div>
+
+        <div class="card-stacked">
+          <div class="card-content">
+            <h5>Task: Write a function that will find all the anagrams of a word from a list. You will be given two inputs a word and an array with words. You should return an array of all the anagrams or an empty array if there are none.</h5>
+            <pre><code class="language-javascript">
+    function anagrams(word, words) {
+      let result = [];
+      let arr1 = word.split('').sort().join('');
+      
+      words.forEach(item => {
+        let arr2 = item.split('').sort().join('');
+        if(arr1 === arr2) result.push(item);
+      });
+      return result;
+    }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="code-example col s10 offset-s1">
+      <div class="card hoverable horizontal">
+        <div class="section-name-container">
+          <div class="section-name-wrapper">
+            <p class="section-name">SELF-PRESENTATION</p>
+          </div>
+        </div>
+
+        <div class="card-stacked">
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
