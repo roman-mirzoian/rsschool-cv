@@ -1,0 +1,70 @@
+.main-info {
+  min-height: 400px!important;
+}
+
+.photo-part {
+  height: 400px;
+}
+
+.my-photo {
+  max-width: 90%;
+  max-height: 90%;
+  margin: 0 auto;
+  border-radius: 100px 15px 100px 15px;
+}
+
+.basic-card {
+  min-height: 350px;
+}
+
+.section-name-container {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #263238;
+}
+
+.section-name-wrapper {
+  display: flex;
+  align-items: center;
+  transform: rotate(-90deg);
+}
+
+.section-name {
+  width: max-content;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+@media (max-width: 500px) {
+  .section-name {
+    font-size: 10px;
+  }
+}
+
+.skills-list,
+.languages-list {
+  font-size: 1.5rem;
+}
+
+.card-content {
+  min-height: 90px;
+}
+
+.portfolio-preview {
+  max-width: 100%!important;
+}
+
+.self-presentation {
+  height: max-content;
+}
+
+.video {
+  margin: 0 auto;
+}
+
+.page-footer {
+  color: #000000;
+}
