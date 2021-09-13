@@ -1,3 +1,69 @@
-body {
-  background-color: #000000;
+.header-part {
+  height: 400px;
 }
+
+.my-photo {
+  max-width: 90%;
+  max-height: 90%;
+  margin: 0 auto;
+}
+
+.card {
+  min-height: 350px;
+}
+
+.section-name-container {
+  max-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-name {
+  display: flex;
+  align-items: center;
+  transform: rotate(-90deg);
+}
+
+.section-name h4 {
+  margin: 0 auto;
+}
+
+.languages-list {
+  font-size: 2rem;
+}
+
+.push {
+  list-style: none;
+  font-family: "Lucida Sans";
+}
+.push li {
+  position: relative;
+  padding: 20px 0 0 40px;
+  color: #D29D25;
+  font-variant: small-caps;
+  font-weight: bold;
+  cursor: pointer;
+}
+.push li:before {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4F5151;
+  content: "";
+  left: 0;
+  transition: .3s ease-in-out;
+  top: 27px;
+}
+.push li:after {
+  position: absolute;
+  border-left: 1px dotted #4F5151;
+  width: 1px;
+  bottom: -12px;
+  content: "";
+  left: 3px;
+  top: 48px;
+}
+.push li:hover:before{box-shadow: 0 0 0 10px rgba(0,0,0,.2)}
+.push li:last-child:after {content: none;}
