@@ -1,1 +1,1 @@
-https://github.com/roman-mirzoian/rsschool-cv/
+https://roman-mirzoian.github.io/rsschool-cv/
