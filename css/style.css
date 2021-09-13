@@ -49,6 +49,14 @@
   font-size: 1.5rem;
 }
 
+.card-content {
+  min-height: 90px;
+}
+
+.portfolio-preview {
+  max-width: 100%!important;
+}
+
 .self-presentation {
   height: max-content;
 }
