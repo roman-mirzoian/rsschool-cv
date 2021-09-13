@@ -6,6 +6,7 @@
   max-width: 90%;
   max-height: 90%;
   margin: 0 auto;
+  border-radius: 100px 15px 100px 15px;
 }
 
 .card {
@@ -35,9 +36,4 @@
 
 .languages-list {
   font-size: 1.5rem;
-}
-
-.highlight{
-  display: inline-block;
-  background: #444a46
 }
