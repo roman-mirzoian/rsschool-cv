@@ -3,6 +3,10 @@ body {
   scroll-behavior: smooth;
 }
 
+.brand-logo {
+  padding: 0 10px!important;
+}
+
 .main-info {
   min-height: 400px!important;
 }
