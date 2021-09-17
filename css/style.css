@@ -1,3 +1,12 @@
+html, 
+body {
+  scroll-behavior: smooth;
+}
+
+.brand-logo {
+  padding: 0 10px!important;
+}
+
 .main-info {
   min-height: 400px!important;
 }
@@ -40,7 +49,7 @@
 
 @media (max-width: 500px) {
   .section-name {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 
@@ -55,6 +64,11 @@
 
 .portfolio-preview {
   max-width: 100%!important;
+}
+
+code, pre, pre code {
+  white-space: pre-wrap;
+  word-break: break-all;
 }
 
 .self-presentation {

@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Roman Mirzoian CV</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/rainbow.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/languages/javascript.min.js"></script>
   <script>hljs.highlightAll();</script>
@@ -15,6 +16,37 @@
 
 <body>
   <header>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper amber darken-2">
+          <a href="#!" class="brand-logo">CV</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#codeExample">Code-Example</a></li>
+            <li><a href="#selfPresentation">Self-Presentation</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav sidenav-close" id="mobile-demo">
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#languages">Languages</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#codeExample">Code-Example</a></li>
+      <li><a href="#selfPresentation">Self-Presentation</a></li>
+    </ul>
+  </header>
+
+  <article id="summary">
     <div class="row">
       <div class="col s12 m6 blue-grey darken-4 main-info">
         <h2 class="white-text">Roman Mirzoian</h2>
@@ -31,10 +63,10 @@
         <img class="my-photo" src="assets/images/my-foto.PNG" alt="My work photo">
       </div>
     </div>
-  </header>
+  </article>
 
   <main class="row">
-    <div class="col s12 m6 l5 offset-l1">
+    <div class="col s12 m6 l5 offset-l1" id="experience">
       <div class="card hoverable horizontal basic-card">
         <div class="section-name-container">
           <div class="section-name-wrapper">
@@ -62,7 +94,7 @@
       </div>
     </div>
 
-    <div class="col s12 m6 l5">
+    <div class="col s12 m6 l5" id="education">
       <div class="card hoverable horizontal basic-card">
         <div class="section-name-container">
           <div class="section-name-wrapper">
@@ -86,7 +118,7 @@
       </div>
     </div>
 
-    <div class="col s12 m6 offset-m1 l5 offset-l1">
+    <div class="col s12 m6 offset-m1 l5 offset-l1" id="skills">
       <div class="card hoverable horizontal basic-card">
         <div class="section-name-container">
           <div class="section-name-wrapper">
@@ -109,7 +141,7 @@
       </div>
     </div>
 
-    <div class="col s12 m4 l5">
+    <div class="col s12 m4 l5" id="languages">
       <div class="card hoverable horizontal basic-card">
         <div class="section-name-container">
           <div class="section-name-wrapper">
@@ -128,7 +160,7 @@
       </div>
     </div>
 
-    <div class="col s12 m10 offset-m1">
+    <div class="col s12 m10 offset-m1" id="portfolio">
       <div class="card hoverable horizontal basic-card">
         <div class="section-name-container">
           <div class="section-name-wrapper">
@@ -186,7 +218,7 @@
       </div>
     </div>
 
-    <div class="col s10 offset-s1 hide-on-small-only">
+    <div class="col s12 m10 offset-m1" id="codeExample">
       <div class="card hoverable horizontal basic-card">
         <div class="section-name-container">
           <div class="section-name-wrapper">
@@ -214,7 +246,7 @@
       </div>
     </div>
 
-    <div class="col s12 m10 offset-m1">
+    <div class="col s12 m10 offset-m1" id="selfPresentation">
       <div class="card hoverable horizontal self-presentation">
         <div class="section-name-container">
           <div class="section-name-wrapper">
@@ -257,5 +289,6 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
